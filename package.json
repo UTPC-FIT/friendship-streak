@@ -19,8 +19,9 @@
   "homepage": "https://github.com/UTPC-FIT/friendship-streak#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "dotenv": "^16.0.0",
     "express": "^5.1.0",
-    "neo4j-driver": "^5.0.0",
-    "dotenv": "^16.0.0"
+    "friendship-streak": "file:",
+    "neo4j-driver": "^5.0.0"
   }
 }
