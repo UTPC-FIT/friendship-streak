@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init-db": "node src/scripts/init-neo4j.js",
+    "check-duplicates": "node src/scripts/check-duplicates.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node src/scripts/seed-data.js",
+    "test-endpoints": "node src/scripts/test-endpoints.js",
+    "clean-db": "node src/scripts/clear-data.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +25,22 @@
   },
   "homepage": "https://github.com/UTPC-FIT/friendship-streak#readme",
   "dependencies": {
+    "axios": "^1.9.0",
     "body-parser": "^2.2.0",
-    "dotenv": "^16.0.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
     "friendship-streak": "file:",
-    "neo4j-driver": "^5.0.0"
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "neo4j-driver": "^5.28.1",
+    "nodemon": "^3.1.10",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
   }
 }
